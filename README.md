@@ -18,30 +18,31 @@ querySelectorAll : Selects all elements that match a given CSS selector.
 <h4>
 2.How to create and insert a new element into the DOM
 </h4>
-<p>Following steps :</p> <br>
+<p>Following steps :</p>
 <p>i. Creating the element </p>
 <p>ii.Attaching it to an existing element into the DOM.</p>
-<p> Example of create and insert of element into the DOM <br>
-const h1 = document.createElement('h1');
-h1.innerText = 'places i want to visit';
+<p> Example of create and insert of element into the DOM :<br>
+const h1 = document.createElement('h1'); <br>
+h1.innerText = 'places i want to visit'; <br>
 placesSection.appendChild(h1);</p>
 
 
 <h4>3.What is Event Bubbling and how does it work? </h4>
 <p>
-When an event occurs on an element,first runs the handler on that element, then moves up the DOM tree (parent -> ancestor -> document).
-Example:
+When an event occurs on an element,first runs the handler on that element, then moves up the DOM tree (parent -> ancestor -> document).<br>
+Example: <br>
 document.getElementById('outer').addEventListener('click', function() {
   console.log('Parent div clicked');
 });
-
+<br>
 document.getElementById('middle').addEventListener('click', function() {
   console.log('ancestor div clicked');
 });
-
+<br>
 document.getElementById('inner').addEventListener('click', function() {
   console.log('document div clicked');
 });
+<br>
 </p>
 
 
