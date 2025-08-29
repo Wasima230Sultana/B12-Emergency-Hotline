@@ -25,6 +25,24 @@ function setCoin(value){
     return document.getElementById("coin-count").innerText = value;
 }
 
+// show alert 
+function showAlert(id1,id2){
+const  serviceName = document.getElementById(id1).innerText;
+     const serviceNumber = document.getElementById(id2).innerText;
+    return alert(serviceName +' and '+ serviceNumber);
+}
+
+// copied number 
+function numberCopyOnClick(id){
+  const textCopy = document.getElementById(id).innerText;
+  // copy to clipboard
+  return navigator.clipboard.writeText(textCopy).then(() => {
+    // alert("Copied: " + textCopy);
+  });
+}
+
+
+// Emergency Number 
 
 
 // copy button 
@@ -32,13 +50,10 @@ document.getElementById('copy-press').addEventListener('click',function(){
   countCopyBtn('copy-count');
 })
 
-
 // heart icon 
-
 document.getElementById("heart-press").addEventListener('click',function(){
  countHeartIcon("heart-count");
 })
-
 
 // coin button and call button
 document.getElementById("call-press").addEventListener('click',function(){
@@ -49,7 +64,12 @@ document.getElementById("call-press").addEventListener('click',function(){
       }
       const remainingCoin = total - 20;
       setCoin(remainingCoin);
-     const  serviceName = document.getElementById('service-name').innerText;
-     const serviceNumber = document.getElementById('service-number').innerText;
-     alert(serviceName +' and '+ serviceNumber);
+      showAlert('emergency-service','emergency-service-number');
+     
+})
+
+
+// hotline number
+document.getElementById('emergency-service-number').addEventListener('click',function(){
+   numberCopyOnClick('emergency-service-number');
 })

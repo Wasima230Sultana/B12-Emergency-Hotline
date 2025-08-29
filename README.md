@@ -14,7 +14,7 @@ getElementByClassName : Selects all elements that has thr specified class name.
 querySelector : Selects the first element that matches a given CSS collector.(tag names, class names, ids). <br>
 querySelectorAll : Selects all elements that match a given CSS selector.
 </p>
-
+<hr>
 <h4>
 2.How to create and insert a new element into the DOM
 </h4>
@@ -25,6 +25,7 @@ querySelectorAll : Selects all elements that match a given CSS selector.
 const h1 = document.createElement('h1'); <br>
 h1.innerText = 'places i want to visit'; <br>
 placesSection.appendChild(h1);</p>
+<hr>
 
 
 <h4>3.What is Event Bubbling and how does it work? </h4>
@@ -44,6 +45,7 @@ document.getElementById('inner').addEventListener('click', function() {
 });
 <br>
 </p>
+<hr>
 
 
 <h4>4.What is Event Delegation in JavaScript? Why is it useful?</h4>
@@ -53,6 +55,7 @@ document.getElementById('inner').addEventListener('click', function() {
 <br>
  Event Delegation is a useful pattern that allows to write cleaner code, and create fewer event listeners with similar logic.
  </p>
+<hr>
 
 
  <h4>5.What is the difference between preventDefault() and stopPropagation() methods?</h4>
@@ -61,3 +64,4 @@ document.getElementById('inner').addEventListener('click', function() {
  <br>
  stopPropagation() : Stops the event from bubbling up to parent elements.
  </p>
+<hr>
