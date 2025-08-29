@@ -1,3 +1,4 @@
+const history =[];
 // copy button funtionality 
 function countCopyBtn(id){
       const initialCopyCount = parseInt(document.getElementById(id).innerText);
@@ -42,7 +43,7 @@ function numberCopyOnClick(id){
 }
 
 
-// Emergency Number 
+// National Emergency Number 
 
 
 // copy button 
@@ -65,11 +66,34 @@ document.getElementById("call-press").addEventListener('click',function(){
       const remainingCoin = total - 20;
       setCoin(remainingCoin);
       showAlert('emergency-service','emergency-service-number');
-     
+     const data ={
+        name : 'National Emergency Number',
+        number : '999',
+        time : new Date().toLocaleTimeString('en-US', { hour12: true })
+     }
+     history.push(data);
+     const callHistory = document.getElementById('call-history-container');
+callHistory.innerText = "";
+for(const data of history){
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <div class="flex justify-between items-center p-5 mt-4 bg-[#FAFAFA] rounded-xl">
+                    <div>
+                    <h1 class="font-semibold text-lg">${data.name}</h1>
+                    <p class="text-[#5C5C5C]">${data.number}</p>
+                    </div>
+                    <h1 class="text-[#111111]">${data.time}</h1>
+                </div>
+    `
+    callHistory.appendChild(div);
+}
 })
-
 
 // hotline number
 document.getElementById('emergency-service-number').addEventListener('click',function(){
    numberCopyOnClick('emergency-service-number');
 })
+
+
+
+// Police Helpline Number
