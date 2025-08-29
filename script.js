@@ -56,7 +56,6 @@ document.getElementById('copy-press').addEventListener('click', function () {
     countCopyBtn('copy-count', 'emergency-service-number');
 })
 
-
 // coin button and call button
 document.getElementById("call-press").addEventListener('click', function () {
     const total = initialCoin("coin-count");
@@ -97,7 +96,6 @@ document.getElementById('police-helpline-number-copy').addEventListener('click',
     countCopyBtn('copy-count', 'police-helpline-number');
 })
 
-
 // coin button and call button
 document.getElementById("police-helpline-number-call").addEventListener('click', function () {
     const total = initialCoin("coin-count");
@@ -131,12 +129,12 @@ document.getElementById("police-helpline-number-call").addEventListener('click',
     }
 })
 
+
 // Fire Service Number 
 // copy button 
 document.getElementById('fire-service-number-copy').addEventListener('click', function () {
     countCopyBtn('copy-count', 'fire-service-number');
 })
-
 
 // coin button and call button
 document.getElementById("fire-service-number-call").addEventListener('click', function () {
@@ -178,7 +176,6 @@ document.getElementById('ambulance-service-number-copy').addEventListener('click
     countCopyBtn('copy-count', 'ambulance-service-number');
 })
 
-
 // coin button and call button
 document.getElementById("ambulance-service-number-call").addEventListener('click', function () {
     const total = initialCoin("coin-count");
@@ -212,12 +209,12 @@ document.getElementById("ambulance-service-number-call").addEventListener('click
     }
 }) 
 
+
 // Women & Child Helpline
 // copy button 
 document.getElementById('women-child-helpline-number-copy').addEventListener('click', function () {
     countCopyBtn('copy-count', 'women-child-helpline-number');
 })
-
 
 // coin button and call button
 document.getElementById("women-child-helpline-number-call").addEventListener('click', function () {
@@ -259,7 +256,6 @@ document.getElementById('anti-corruption-helpline-number-copy').addEventListener
     countCopyBtn('copy-count', 'anti-corruption-helpline-number');
 })
 
-
 // coin button and call button
 document.getElementById("anti-corruption-helpline-number-call").addEventListener('click', function () {
     const total = initialCoin("coin-count");
@@ -299,7 +295,6 @@ document.getElementById("anti-corruption-helpline-number-call").addEventListener
 document.getElementById('electricity-helpline-number-copy').addEventListener('click', function () {
     countCopyBtn('copy-count', 'electricity-helpline-number');
 })
-
 
 // coin button and call button
 document.getElementById("electricity-helpline-number-call").addEventListener('click', function () {
@@ -341,7 +336,6 @@ document.getElementById('brac-helpline-number-copy').addEventListener('click', f
     countCopyBtn('copy-count', 'brac-helpline-number');
 })
 
-
 // coin button and call button
 document.getElementById("brac-helpline-number-call").addEventListener('click', function () {
     const total = initialCoin("coin-count");
@@ -381,7 +375,6 @@ document.getElementById("brac-helpline-number-call").addEventListener('click', f
 document.getElementById('bangladesh-railway-helpline-number-copy').addEventListener('click', function () {
     countCopyBtn('copy-count', 'bangladesh-railway-helpline-number');
 })
-
 
 // coin button and call button
 document.getElementById("bangladesh-railway-helpline-number-call").addEventListener('click', function () {
