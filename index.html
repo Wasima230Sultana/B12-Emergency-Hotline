@@ -24,9 +24,9 @@
             <h1 class="text-[#006747] text-xl md:text-3xl font-bold">Emergency <br> Service</h1>
         </div>
         <div class="flex-wrap">
-            <button class="btn btn-outline ml-5 font-bold text-xl rounded-3xl bg-[#d8fbe0]"> <span id="heart-count">0</span> <img src="assets/heart.png" alt="" class="h-[25px] "></button>
+            <button class="btn btn-outline ml-5 font-bold text-xl rounded-3xl bg-[#d8fbe0] border-none"> <span id="heart-count">0</span> <img src="assets/heart.png" alt="" class="h-[25px] "></button>
 
-            <button  class="btn btn-outline ml-5 font-bold text-xl rounded-3xl bg-[#d8fbe0]"> <span id="coin-count">100</span> <img src="assets/coin.png" alt="" class="h-[25px] "></button>
+            <button  class="btn btn-outline ml-5 font-bold text-xl rounded-3xl bg-[#d8fbe0] border-none"> <span id="coin-count">100</span> <img src="assets/coin.png" alt="" class="h-[25px] "></button>
 
             <button class="btn btn-outline bg-[#00A63E] ml-5 pl-5 font-medium text-lg text-[#ffffff] rounded-3xl p-6 mt-4 md:mt-0"> <span id="copy-count">0</span>Copy</button>
         </div>
@@ -58,10 +58,10 @@
                 <h1 id="emergency-service-number" class="font-bold text-xl mt-5">999</h1>
                 <button class="btn btn-xs rounded-2xl">All</button>
                 <div class="mt-5">
+                   
+                  <button id="copy-press" class=" btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                  <button id="copy-press" class=" btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-
-                  <button id="call-press"class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E] mt-[0px] md:mt-[10px]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="call-press"class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[white] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
              
@@ -76,8 +76,9 @@
                 <h1 id="police-helpline-number" class="font-bold text-xl mt-5">999</h1>
                 <button class="btn btn-xs rounded-2xl">Police</button>
                 <div class="mt-5">
-                  <button id="police-helpline-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="police-helpline-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="police-helpline-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+
+                  <button id="police-helpline-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-white  mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
@@ -92,16 +93,17 @@
                 <h1 id="fire-service-number" class="font-bold text-xl mt-5">999</h1>
                 <button class="btn btn-xs rounded-2xl">Fire</button>
                 <div class="mt-5">
-                  <button id="fire-service-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="fire-service-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="fire-service-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+
+                  <button id="fire-service-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
             <!-- call history -->
                  <div class=" p-5 bg-white rounded-xl shadow-xl row-span-3">
                 <div class="mt-4 flex justify-between items-center " >
-                <p><i class="fa-regular fa-clock"></i>Call History</p>
-                  <button id="clear-btn" class="btn btn-soft rounded-3xl w-1/3 bg-[#00A63E]">Clear</button>  
+                <p class=""><i class="fa-regular fa-clock text-[#5C5C5C]"></i><span class="font-medium text-[#111111]"> Call History</span></p>
+                  <button id="clear-btn" class="btn btn-soft rounded-3xl w-1/3 bg-[#00A63E] text-white">Clear</button>  
                 </div>
                 <div id="call-history-container"> 
                     
@@ -121,8 +123,8 @@
                 <h1 id="ambulance-service-number"  class="font-bold text-xl mt-5">1994-999999</h1>
                 <button class="btn btn-xs rounded-2xl">Health</button>
                 <div class="mt-5">
-                  <button id="ambulance-service-number-copy"  class="btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="ambulance-service-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="ambulance-service-number-copy"  class="btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                  <button id="ambulance-service-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
@@ -137,8 +139,8 @@
                 <h1 id="women-child-helpline-number" class="font-bold text-xl mt-5">109</h1>
                 <button class="btn btn-xs rounded-2xl">Help</button>
                 <div class="mt-5">
-                  <button id="women-child-helpline-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 mb-3 bg-white"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="women-child-helpline-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="women-child-helpline-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 mb-3 bg-white text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                  <button id="women-child-helpline-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
@@ -153,8 +155,9 @@
                 <h1 id="anti-corruption-helpline-number" class="font-bold text-xl mt-5">106</h1>
                 <button class="btn btn-xs rounded-2xl">Govt.</button>
                 <div class="mt-5">
-                  <button id="anti-corruption-helpline-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="anti-corruption-helpline-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="anti-corruption-helpline-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+
+                  <button id="anti-corruption-helpline-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
@@ -169,8 +172,9 @@
                 <h1 id="electricity-helpline-number" class="font-bold text-xl mt-5">16216</h1>
                 <button class="btn btn-xs rounded-2xl">Electricity</button>
                 <div class="mt-5">
-                  <button id="electricity-helpline-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="electricity-helpline-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="electricity-helpline-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+
+                  <button id="electricity-helpline-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
@@ -185,8 +189,8 @@
                 <h1 id="brac-helpline-number" class="font-bold text-xl mt-5">16445</h1>
                 <button class="btn btn-xs rounded-2xl">NGO</button>
                 <div class="mt-5">
-                  <button id="brac-helpline-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 mb-3 bg-white"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="brac-helpline-number-call" class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="brac-helpline-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 mb-3 bg-white text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                  <button id="brac-helpline-number-call" class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
@@ -201,8 +205,8 @@
                 <h1 id="bangladesh-railway-helpline-number" class="font-bold text-xl mt-5">163</h1>
                 <button class="btn btn-xs rounded-2xl">Travel</button>
                 <div class="mt-5">
-                  <button id="bangladesh-railway-helpline-number-copy" class="btn btn-soft rounded-xl w-[180px] mr-2 bg-white mb-3"><i class="fa-regular fa-copy"></i>Copy</button>
-                  <button id="bangladesh-railway-helpline-number-call"  class="btn btn-soft rounded-xl w-[180px] bg-[#00A63E]"><i class="fa-solid fa-phone"></i>Call</button>  
+                  <button id="bangladesh-railway-helpline-number-copy" class="btn btn-soft rounded-xl w-[150px] mr-2 bg-white mb-3 text-[#5C5C5C]"><i class="fa-regular fa-copy"></i>Copy</button>
+                  <button id="bangladesh-railway-helpline-number-call"  class="btn btn-soft rounded-xl w-[150px] bg-[#00A63E] text-[#ffffff] mt-[-11px]"><i class="fa-solid fa-phone"></i>Call</button>  
                 </div>
             </div>
 
